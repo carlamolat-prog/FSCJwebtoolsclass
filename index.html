@@ -4,7 +4,51 @@
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="style.css">
     <metaname="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page Assignment for COP 2822C - FSCJ</title>
+<title>CSS Grid - Card Layout</title>
+<style>
+    /* Resetting some default styles */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+
+    /* Grid container */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px; /* space between cards */
+    }
+
+    /* Card styling */
+    .card {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        padding: 20px;
+        transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card h3 {
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .card p {
+        color: #666;
+        line-height: 1.4;
+    }
+</style>
   </head>
   <header class="hero">
     <div class="hero-content">
