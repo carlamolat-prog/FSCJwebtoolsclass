@@ -55,7 +55,8 @@ body, html {
   padding: 15px 20px;
 }
 .logo img {
-  height: 30px;
+ max-width: 50%; /* Shrinks the image to 50% of its original width */
+ height: auto; /* Maintains aspect ratio */
 }
 
 .nav-links {
